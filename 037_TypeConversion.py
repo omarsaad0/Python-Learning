@@ -51,9 +51,9 @@ print("/|"*50)
 #c = "Omar"  # string
 d = (("A", 1), ("B", 2), ("C", 3))  # To Convert Tuple to Dict make it nested tuple to take the Key + Value
 e = [["One", 1], ["Two", 2], ["Three", 3]]  # To Convert List to Dict make it nested List to take Key + Value
-f = {{"A", 1}, {"B", 2}}  # Can not be converted to Dict
+#f = {{"A", 1}, {"B", 2}}  # Can not be converted to Dict
 
 #print(dict(c))  # Can not be Converted to Dict bec no Key + Value
 print(dict(d))
 print(dict(e))
-print(dict(d))  # Un hashable Type 'set'
+#print(dict(d))  # Un hashable Type 'set'
