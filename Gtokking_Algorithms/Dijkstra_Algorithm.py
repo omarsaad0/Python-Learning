@@ -77,5 +77,6 @@ def display_route(node=None):
         route.append(node)
         display_route(parent)
 
+
 find_fastest_path()
 display_route()
