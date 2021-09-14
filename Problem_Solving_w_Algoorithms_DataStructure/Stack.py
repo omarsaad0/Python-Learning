@@ -37,7 +37,7 @@ def par_checker (symbol_string):
     balanced = True
     for i in symbol_string:
 
-        if i == '(':
+        if i == '(' or i =='[' or i =='{':
             s.push(i)
         else:
             if s.is_empty():
@@ -47,4 +47,4 @@ def par_checker (symbol_string):
 
     return print(f'Is The String Balanced ? {balanced}')
 
-par_checker('()()()()()()()((()))')
+par_checker('()()()()()()()((()))[]{}}')
