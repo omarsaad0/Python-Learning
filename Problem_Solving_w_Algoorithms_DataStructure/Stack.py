@@ -52,20 +52,22 @@ def par_checker (symbol_string):
 ########################################################################################################################
 
 
-def divide_by_2(dec_number):
+def base_converter(dec_number, base):
     rem_stack = Stack()
-
+    digits = '0123456789ABCDEF'
     while dec_number>0:
-        rem = dec_number % 2
+        rem = dec_number % base
         rem_stack.push(rem)
-        dec_number = dec_number // 2
+        dec_number = dec_number // base
 
-    bin_number = ''
+    new_string = ''
     while not rem_stack.is_empty():
-        bin_number = bin_number + str(rem_stack.pop())
-    return bin_number
+        new_string = new_string + digits[rem_stack.pop()]
+    return new_string
 
 
-print(divide_by_2(500))
+print(base_converter(500, 16))
+print(base_converter(250, 12))
+print(base_converter(120, 2))
 
 ########################################################################################################################
