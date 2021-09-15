@@ -18,3 +18,7 @@ while string_gen != 'methinksitslikeaweasel':
 time.sleep(1)
 end = time.time()
 print(f"Found The String in {end-start}")
+
+
+
+
